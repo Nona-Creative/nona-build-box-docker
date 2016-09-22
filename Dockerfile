@@ -9,3 +9,5 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
 RUN composer global require wp-cli/wp-cli
 RUN npm install -g grunt bower gulp node-gyp coffee-script marked
 RUN echo '{ "allow_root": true }' > /root/.bowerrc
+RUN apt-get install -yq ruby 
+RUN gem install sass
